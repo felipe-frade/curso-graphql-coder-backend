@@ -12,14 +12,14 @@ const db = require('../config/db')
 //         db.destroy()
 //     })
 
-const perfilSU = {
-    nome: 'root' + Math.random(),
-    rotulo: 'Super Mário'
-}
+// const perfilSU = {
+//     nome: 'root' + Math.random(),
+//     rotulo: 'Super Mário'
+// }
 
-db.insert(perfilSU).into('perfis')
-    .then(res => console.log(res))
-    .catch(err => console.log(err.sqlMessage))
-    .finally(() => {
-        db.destroy()
-    })
+// db.insert(perfilSU).into('perfis')
+//     .then(res => console.log(res))
+//     .catch(err => console.log(err.sqlMessage))
+//     .finally(() => {
+//         db.destroy()
+//     })

@@ -17,7 +17,7 @@ async function exercicio() {
     let { id } = await db('usuarios').select('id').limit(1).first()
 
     await db('usuarios').where({ id })
-        .update({ nome: 'lala' })
+        .update({ nome: 'teste' })
 
     return await db('usuarios').where({ id })
 }
